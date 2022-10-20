@@ -4,7 +4,7 @@ motor==2.5.1
 Pyrogram==2.0.30
 TgCrypto==1.2.3
 bs4
-pyshortener
+pyshortner
 heroku3
 aiofiles
 validators
