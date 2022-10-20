@@ -129,7 +129,7 @@ START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
 
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Mdisk + Shortener', callback_data=f'change_method#MdiskProWithTnlinks'),
+        InlineKeyboardButton('Mdisk + Shortener', callback_data=f'change_method#TnlinksWithMdisk'),
         InlineKeyboardButton('Shortener', callback_data='change_method#Tnlinks')
     ],
         [
