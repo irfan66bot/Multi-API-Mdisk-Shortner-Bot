@@ -17,7 +17,7 @@ from pyshortner import *
 logger = logging.getLogger(__name__)
 
 user_commands = ["set_api", "header", "footer", "username", "banner_image", "me"]
-avl_web = ["tnlinks.in",]
+avl_web = ["Tnlinks.in",]
 
 avl_web1 = "".join(f"- {i}\n" for i in avl_web)
 
