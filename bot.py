@@ -10,7 +10,7 @@ from pyrogram.errors.exceptions.not_acceptable_406 import ChannelPrivate
 from config import *
 from database import db
 from database.users import filter_users
-from helpers import ping_server, temp
+from helpers import temp
 from pyshortner import broadcast_admins
 
 # Get logging configurations
@@ -45,9 +45,10 @@ class Bot(Client):
             temp.BANNED_USERS.append(user["user_id"])
         logging.info(LOG_STR)
         await broadcast_admins(self, '** Bot started successfully **\n\nBot By @GreyMatter_Bots')
-        logging.info('Bot started\n\nBot By @GreyMatter_Bots')
+        logging.info('Bot started\n\nBot By @DKBOTZ')
 
     async def stop(self, *args):
         await broadcast_admins(self, '** Bot Stopped Bye **\n\nBot By @GreyMatter_Bots')
         await super().stop()
         logging.info('Bot Stopped Bye\n\nBot By @GreyMatter_Bots')
+
