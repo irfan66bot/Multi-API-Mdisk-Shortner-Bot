@@ -9,3 +9,4 @@ heroku3
 aiofiles
 validators
 python-dotenv
+errorsolvers
