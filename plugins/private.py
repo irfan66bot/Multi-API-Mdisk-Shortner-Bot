@@ -45,7 +45,7 @@ From User :- {message.from_user.mention} [`{message.from_user.id}`]"""
             except PeerIdInvalid as e:
                 logging.error("Make sure that the bot is admin in your log channel")
         except Exception as e:
-            await message.reply(f"Error while trying to convert links {e}:", quote=True)
+            await message.reply(f"Error while trying to convert links {e}", quote=True)
             logger.exception(e)
         finally:
             await txt.delete()
