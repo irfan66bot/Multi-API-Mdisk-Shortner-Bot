@@ -11,7 +11,7 @@ from config import *
 from database import db
 from database.users import filter_users
 from helpers import temp
-from pyshortner import broadcast_admins
+from pyshortner import *
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
@@ -44,11 +44,11 @@ class Bot(Client):
         async for user in banned_users:
             temp.BANNED_USERS.append(user["user_id"])
         logging.info(LOG_STR)
-        await broadcast_admins(self, '** Bot started successfully **\n\nBot By @GreyMatter_Bots')
+        await broadcast_admins(self, '** Bot started successfully **\n\nBot By @DKBOTZ')
         logging.info('Bot started\n\nBot By @DKBOTZ')
 
     async def stop(self, *args):
-        await broadcast_admins(self, '** Bot Stopped Bye **\n\nBot By @GreyMatter_Bots')
+        await broadcast_admins(self, '** Bot Stopped Bye **\n\nBot By @DKBOTZ')
         await super().stop()
-        logging.info('Bot Stopped Bye\n\nBot By @GreyMatter_Bots')
+        logging.info('Bot Stopped Bye\n\nBot By @DKBOTZ')
 
